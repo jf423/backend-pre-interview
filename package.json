@@ -1,12 +1,22 @@
 {
+    "scripts": {
+        "start": "babel-node src/index.js",
+        "test": "IS_TEST=true jest"
+    },
     "devDependencies": {
-        "eslint": "^7.0.0"
+        "@babel/core": "^7.11.4",
+        "@babel/node": "^7.10.5",
+        "@babel/preset-env": "^7.11.0",
+        "babel-jest": "^26.3.0",
+        "eslint": "^7.0.0",
+        "eslint-plugin-prettier": "^3.1.4",
+        "jest": "^26.4.2"
     },
     "name": "backend-pre-interview",
     "version": "1.0.0",
     "main": "index.js",
     "repository": "git@github.com:en-trak/backend-pre-interview.git",
-    "author": "Linnovs Liu <7882261+linnovs@users.noreply.github.com>",
+    "author": "Jeff Wang <https://github.com/jf423>",
     "license": "MIT",
     "private": false,
     "eslintConfig": {
@@ -18,7 +28,7 @@
         },
         "extends": [
             "eslint:recommended",
-            "plugins:prettier/recommended"
+            "plugin:prettier/recommended"
         ],
         "parserOptions": {
             "sourceType": "module"
